@@ -4,7 +4,7 @@
   "description": "Generate images with dynamic proportions",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "babel ./src/app.js -o ./public/bundle.js"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/joalisonpereira/image-generator/issues"
   },
-  "homepage": "https://github.com/joalisonpereira/image-generator#readme"
+  "homepage": "https://github.com/joalisonpereira/image-generator#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  }
 }
