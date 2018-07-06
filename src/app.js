@@ -1,7 +1,8 @@
-const array=[1,2,3,4,5,7,10];
+import api from './api';
 
-function sum(...z){
-	return z.reduce((total,index)=>total+=index);
+class App{
+	constructor(){
+		
+	}
 }
-
-console.log(sum(array));
+//Instalar plugin para usar async e rest spread

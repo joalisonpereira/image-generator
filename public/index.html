@@ -1,10 +1,99 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 	<head>
+		<!-- META TAGS -->
 		<meta charset="UTF-8">
-		<title>Image Generator</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- TITLE-->
+		<title>ImageGenerator</title>
+		<!-- FAVICON-->
+		<link rel="icon" href="img/favicon.png" type="image/x-icon"/>
+		<!-- CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<!-- FONT -->
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	</head>
 	<body>
+		<header>
+			<nav class="navbar navbar-expand-lg navbar-light">
+			  <a class="navbar-brand" href="#">
+			  	<img src="img/favicon.png" alt="Logo">
+			  	<h1 class="text">ImageGenerator</h1>
+			  </a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			    <ul class="navbar-nav ml-auto">
+			      <li class="nav-item">
+			        <a class="nav-link active" href="https://picsum.photos/" target="_blank">
+			        	<span class="text hidden-md-down">API</span>
+			        </a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link active" href="https://github.com/joalisonpereira/image-generator">
+			        	<span class="text hidden-md-down">Source</span>
+			        </a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link active" href="#">
+			        	<span class="text hidden-md-down">Random</span>
+			        </a>
+			      </li>
+			    </ul>
+			  </div>
+			</nav>
+		</header>
+		<br>
+		<section class="section">
+			<div class="container mt-4">
+				<div class="row">
+					<div class="col col-left fadeIn" data-load-time="300">
+						<div class="images text-center">
+							<img src="img/random-image-1.jpg" alt="Random image" class="img-fluid fadeIn img-thumbnail">
+							<img src="img/random-image-2.jpg" alt="Random image" class="img-fluid fadeIn img-thumbnail">
+						</div>
+						<p class="text-justify description mt-5">
+							A quick and simple service for getting pictures random for use as placeholders in your designs aor code. Just put your image size (width & height) and we generate it.
+						</p>
+					</div>
+					<div class="col-lg-1"></div>
+					<div class="col-lg-5 .col-right mt-4 fadeIn" data-load-time="800">
+						<div class="text-right mb-5">
+							<h2>Generate your image now!</h2>
+						</div>
+						<form action="#" class="form">
+							<div class="form-group">
+								<label for="width">Width</label>
+								<input type="number" class="form-control" id="width" min="1" max="4000" required>
+							</div>
+							<div class="form-group">
+								<label for="height">Height</label>
+								<input type="number" class="form-control" id="height" min="1" max="4000" required>
+							</div>
+							<div class="form-group mt-4">
+								<input type="checkbox" id="grayscale">
+								<label for="grayscale" class="mr-3">Grayscale</label>
+								<input type="checkbox" id="blur">
+								<label for="blur">Blur</label>
+							</div>
+							<button class="btn btn-block btn-default btn-lg bg-color text-white btn-gen mt-4">Generate</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="text-center">
+				<p>ImageGenerator - <a href="https://joalisonpereira.github.io" target="_blank">Joalison Pereira</a></p>
+			</div>
+		</footer>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 		<script src="./app.bundle.js"></script>
+		<script src="./style.bundle.js"></script>
 	</body>
 </html>
