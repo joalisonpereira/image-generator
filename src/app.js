@@ -42,7 +42,6 @@ class App{
 			url="g/"+url;
 		if(isBlur===true)
 			url+="?blur";
-		console.log(url);
 		return API+url;
 	}
 	render(){
