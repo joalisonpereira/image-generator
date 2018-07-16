@@ -5,6 +5,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta name="author" content="Joalison Pereira">
+		<meta name="description" content="Generate images with dynamic proportions">
 		<!-- TITLE-->
 		<title>ImageGenerator</title>
 		<!-- FAVICON-->
@@ -39,8 +40,8 @@
 			        </a>
 			      </li>
 			      <li class="nav-item">
-			        <a class="nav-link active" href="#">
-			        	<span class="text hidden-md-down">Random</span>
+			        <a class="nav-link active" href="https://www.facebook.com/sharer/sharer.php?u=https%3A//joalisonpereira.github.io/image-generator/" target="_blank">
+			        	<span class="text hidden-md-down">Share</span>
 			        </a>
 			      </li>
 			    </ul>
@@ -65,14 +66,14 @@
 						<div class="text-right mb-5">
 							<h2>Generate your image now!</h2>
 						</div>
-						<form action="#" class="form">
+						<form action="#" class="form" id="form">
 							<div class="form-group">
 								<label for="width">Width</label>
-								<input type="number" class="form-control" id="width" min="1" max="4000" required>
+								<input type="number" class="form-control" id="width" min="1" max="5000" placeholder="1366" required>
 							</div>
 							<div class="form-group">
 								<label for="height">Height</label>
-								<input type="number" class="form-control" id="height" min="1" max="4000" required>
+								<input type="number" class="form-control" id="height" min="1" max="5000" placeholder="768" required>
 							</div>
 							<div class="form-group mt-4">
 								<input type="checkbox" id="grayscale">
@@ -80,12 +81,30 @@
 								<input type="checkbox" id="blur">
 								<label for="blur">Blur</label>
 							</div>
-							<button class="btn btn-block btn-default btn-lg bg-color text-white btn-gen mt-4">Generate</button>
+							<button class="btn btn-block btn-default btn-lg bg-color text-white btn-gen mt-4 rounded-0">Generate</button>
 						</form>
 					</div>
 				</div>
 			</div>
 		</section>
+		<aside>
+			<div class="modal fade" id="modalImage">
+			  <div class="modal-dialog modal-lg">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+		        	<img src="img/load.gif" alt="Loading" class="img-fluid d-none mx-auto" id="loadGif">
+		        	<img src="#" alt="Generated Image" class="img-fluid d-none mx-auto" id="imgGenerated">
+			      </div>
+			      <div class="modal-footer"></div>
+			    </div>
+			  </div>
+			</div>
+		</aside>
 		<footer class="footer">
 			<div class="text-center">
 				<p>ImageGenerator - <a href="https://joalisonpereira.github.io" target="_blank">Joalison Pereira</a></p>
@@ -95,6 +114,6 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 		<script src="./app.bundle.js"></script>
-		<script src="./style.bundle.js"></script>
+		<script src="js/style.js"></script>
 	</body>
 </html>

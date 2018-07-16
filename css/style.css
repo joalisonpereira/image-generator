@@ -96,6 +96,14 @@ input[type="checkbox"]:checked + label:before {
 .footer p a{
 	color:#444;
 }
+/* MODAL */
+.modal-header,.modal-footer{
+	border:none;
+}
+#imgGenerated{
+	margin-top:-10px;
+	max-height: 450px;
+}
 /* EFFECTS */
 .fadeIn{
 	opacity: 0;
