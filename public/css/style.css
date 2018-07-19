@@ -43,6 +43,24 @@ html,body{
 	-o-transform: rotate(7deg);
 	transform: rotate(7deg);
 }
+.images img:first-child:hover{
+	-webkit-transform:rotate(-7deg) scale(1.1);
+	-ms-transform:rotate(-7deg) scale(1.1);
+	-o-transform:rotate(-7deg) scale(1.1);
+	transform:rotate(-7deg) scale(1.1);
+	opacity:1;
+	z-index: 999;
+	transition:all 0.5s;
+}
+.images img:last-child:hover{
+	-webkit-transform:rotate(7deg) scale(1.1);
+	-ms-transform:rotate(7deg) scale(1.1);
+	-o-transform:rotate(7deg) scale(1.1);
+	transform:rotate(7deg) scale(1.1);
+	opacity:1;
+	z-index: 999;
+	transition:all 0.5s;
+}
 @media(max-width: 1200px){
 	.images img{
 		width:250px;
@@ -115,4 +133,19 @@ input[type="checkbox"]:checked + label:before {
 	top:0px;
 	opacity: 0.9;
 	transition: all 1s;
+}
+.grayscale{
+	-webkit-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+.blur{
+	-webkit-filter: blur(1.5px);
+	-o-filter: blur(1.5px);
+	filter: blur(1.5px);
+}
+.grayscale-blur{
+	-webkit-filter: grayscale(100%) blur(1.4px);
+	-o-filter: grayscale(100%) blur(1.4px);
+	filter: grayscale(100%) blur(1.4px);
 }
