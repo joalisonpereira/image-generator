@@ -1,5 +1,5 @@
-# Image-generator
- Generate images with dynamic proportions
+# image-generator
+Generate images with dynamic proportions
 
 Link
 ------
