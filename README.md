@@ -1,6 +1,11 @@
-# image-generator
-Generate images with dynamic proportions
+<h1 align="left">
+  <strong>Image Generator</strong>
+</h1>
 
-Link
-------
-https://joalisonpereira.github.io/image-generator
+<p align="left">
+  A quick and simple service for getting pictures random for use as placeholders in your designs aor code. Just put your image size (width & height) and we generate it.
+</p>
+
+## Author
+
+**Joalison Pereira** - [joalisonpereira](https://github.com/joalisonpereira)
